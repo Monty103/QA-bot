@@ -1,0 +1,14 @@
+{
+  "tesseract_path": "C:\\dt\\Tesseract-OCR\\tesseract.exe",
+  "database_file": "test_questions.db",
+  "ocr_language": "srp+eng",
+  "fuzzy_match_threshold": 85,
+  "monitoring_interval_seconds": 0.5,
+  "click_detection_threshold": 5,
+  "correction_delay_seconds": 0.2,
+  "circle_min_circularity": 0.7,
+  "square_max_circularity": 0.5,
+  "enable_auto_correction": true,
+  "log_corrections_to_database": true,
+  "show_debug_messages": false
+}
