@@ -17,11 +17,16 @@ import numpy as np
 from datetime import datetime
 from typing import List, Dict, Optional, Tuple
 import sys
+import os
 
 # Configuration
 API_BASE_URL = "https://question-database-api.onrender.com"
 SELECTION_RECT_COLOR = (0, 255, 0)  # Green for selection rectangle
 SELECTION_RECT_WIDTH = 2
+
+# Local backup configuration
+BACKUP_FOLDER = "data"
+BACKUP_FILE = "questions_answers.json"
 
 class SelectionArea:
     """Allows user to select a rectangular area on screen"""
@@ -579,6 +584,51 @@ installed on your system.
         text_widget.insert(1.0, output)
         text_widget.config(state=tk.DISABLED)
 
+    def save_to_local_backup(self, entries: List[Dict]) -> bool:
+        """
+        Save question/answer entries to local JSON file as backup.
+        Appends to existing file if it exists.
+
+        Args:
+            entries: List of question/answer dictionaries to save
+
+        Returns:
+            True if successful, False otherwise
+        """
+        try:
+            # Get the directory where the script is located
+            script_dir = os.path.dirname(os.path.abspath(__file__))
+            backup_dir = os.path.join(script_dir, BACKUP_FOLDER)
+            backup_path = os.path.join(backup_dir, BACKUP_FILE)
+
+            # Create backup folder if it doesn't exist
+            if not os.path.exists(backup_dir):
+                os.makedirs(backup_dir)
+
+            # Load existing data if file exists
+            existing_data = []
+            if os.path.exists(backup_path):
+                try:
+                    with open(backup_path, 'r', encoding='utf-8') as f:
+                        existing_data = json.load(f)
+                except (json.JSONDecodeError, IOError):
+                    # If file is corrupted or empty, start fresh
+                    existing_data = []
+
+            # Append new entries
+            existing_data.extend(entries)
+
+            # Save to file
+            with open(backup_path, 'w', encoding='utf-8') as f:
+                json.dump(existing_data, f, ensure_ascii=False, indent=2)
+
+            print(f"Backup saved: {len(entries)} new entries ({len(existing_data)} total) to {backup_path}")
+            return True
+
+        except Exception as e:
+            print(f"Error saving backup: {e}")
+            return False
+
     def on_sync(self):
         """Sync all collected data to the database"""
         if not self.collected_data:
@@ -594,6 +644,13 @@ installed on your system.
         self.update_status("Syncing to database...", "blue")
 
         def sync_thread():
+            # First, save to local backup (before database sync)
+            backup_success = self.save_to_local_backup(self.collected_data)
+            if backup_success:
+                print("Local backup saved successfully")
+            else:
+                print("Warning: Local backup failed, continuing with database sync")
+
             successful = 0
             failed = 0
 
@@ -619,8 +676,8 @@ installed on your system.
 
             # Show results
             message = f"Sync Complete!\n\n"
-            message += f"Successful: {successful}\n"
-            message += f"Failed: {failed}\n"
+            message += f"Database upload: {successful} OK, {failed} failed\n"
+            message += f"Local backup: {'Saved' if backup_success else 'Failed'}\n"
 
             if failed == 0:
                 self.collected_data = []  # Clear after successful sync

@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(cat:*)",
+      "Bash(pip install:*)",
+      "Bash(timeout 5 python:*)",
+      "Bash(python:*)",
+      "Bash(dir \"C:\\Program Files\\Tesseract-OCR\\tesseract.exe\")",
+      "Bash(dir:*)",
+      "Bash(pyinstaller:*)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}

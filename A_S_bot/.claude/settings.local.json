@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python test_integration.py:*)",
+      "Bash(echo:*)",
+      "Bash(pip install:*)",
+      "Bash(timeout 5 python:*)",
+      "Bash(tree:*)",
+      "Bash(python -c:*)",
+      "Bash(python:*)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}

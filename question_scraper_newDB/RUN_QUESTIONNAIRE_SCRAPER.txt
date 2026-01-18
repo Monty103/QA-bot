@@ -1,0 +1,318 @@
+================================================================================
+SERBIAN QUESTIONNAIRE SCRAPER - RUN AS EXECUTABLE
+================================================================================
+
+You now have a ready-to-run .exe file!
+
+NO PYTHON COMMAND NEEDED - Just double-click and go!
+
+================================================================================
+EXECUTABLE LOCATION
+================================================================================
+
+Primary Location:
+  d:\Project\question_scraper_newDB\dist\Serbian Questionnaire Scraper.exe
+
+Size: 63 MB (includes Python and all libraries)
+
+================================================================================
+HOW TO RUN (3 OPTIONS)
+================================================================================
+
+OPTION 1: Direct Click (Easiest)
+  1. Open File Explorer
+  2. Go to: d:\Project\question_scraper_newDB\dist\
+  3. Double-click: Serbian Questionnaire Scraper.exe
+  4. Wait 5-10 seconds (first time startup)
+  5. Application opens!
+
+OPTION 2: Batch File (Quick)
+  1. Go to: d:\Project\question_scraper_newDB\
+  2. Double-click: RUN_SCRAPER.bat
+  3. Application launches immediately
+
+OPTION 3: Desktop Shortcut (Recommended)
+  1. Open File Explorer
+  2. Go to: d:\Project\question_scraper_newDB\dist\
+  3. Right-click: Serbian Questionnaire Scraper.exe
+  4. Click: "Create shortcut"
+  5. Move shortcut to Desktop
+  6. Double-click shortcut anytime
+
+================================================================================
+FIRST TIME SETUP (One Time Only)
+================================================================================
+
+REQUIREMENT: Tesseract-OCR
+
+Before running the application, install Tesseract-OCR:
+
+1. Go to: https://github.com/UB-Mannheim/tesseract/wiki
+2. Download the Windows installer
+3. Run the installer
+4. IMPORTANT: Install to default location: C:\Program Files\Tesseract-OCR
+5. Complete the installation
+6. Restart your computer (recommended)
+
+That's it! Then you can run the exe.
+
+================================================================================
+QUICK START
+================================================================================
+
+1. Ensure Tesseract-OCR is installed (see above)
+2. Double-click: Serbian Questionnaire Scraper.exe
+3. Wait for window to open (5-10 seconds on first run)
+4. Click START button
+5. Press SPACEBAR to begin capture
+6. Follow the on-screen workflow
+
+See QUICK_START.md for detailed usage instructions.
+
+================================================================================
+WHAT HAPPENS WHEN YOU RUN IT
+================================================================================
+
+On startup, the application:
+  ✓ Checks for Tesseract-OCR installation
+  ✓ Checks API connectivity
+  ✓ Loads all libraries
+  ✓ Opens the main window
+  ✓ Shows status (API Connected or Disconnected)
+
+Then you can:
+  ✓ Click START to listen for spacebar
+  ✓ Capture questions and answers
+  ✓ Preview your captured data
+  ✓ Click SYNC to upload to database
+
+================================================================================
+STARTUP TIME
+================================================================================
+
+First Run:  5-10 seconds (loading all libraries)
+Normal Run: 2-3 seconds (cached libraries)
+
+Don't worry if it takes a few seconds - it's normal!
+
+================================================================================
+TROUBLESHOOTING
+================================================================================
+
+PROBLEM: Application won't start
+SOLUTION:
+  - Make sure Tesseract-OCR is installed
+  - Ensure it's at: C:\Program Files\Tesseract-OCR
+  - Restart computer and try again
+
+PROBLEM: "Tesseract not found" error
+SOLUTION:
+  - Download and install from: https://github.com/UB-Mannheim/tesseract/wiki
+  - Use default installation path
+  - Restart your computer
+
+PROBLEM: "API Disconnected" message
+SOLUTION:
+  - Check internet connection
+  - Render.com API might be temporarily down
+  - Try again in a few moments
+
+PROBLEM: "Could not extract text"
+SOLUTION:
+  - Make sure question text is clear
+  - Try selecting a larger area
+  - Check that Tesseract is working
+  - Reinstall Tesseract if needed
+
+PROBLEM: Windows says "Unknown developer" warning
+SOLUTION:
+  - This is normal for self-created .exe files
+  - Click "More info" then "Run anyway"
+  - It's safe - you created it!
+
+================================================================================
+CREATING DESKTOP SHORTCUT (Recommended)
+================================================================================
+
+Make it super easy to launch:
+
+Method 1: Right-click and drag
+  1. Open File Explorer
+  2. Navigate to: d:\Project\question_scraper_newDB\dist\
+  3. Right-click on: Serbian Questionnaire Scraper.exe
+  4. Select: "Create shortcut"
+  5. Right-click the shortcut file
+  6. Select: "Cut"
+  7. Open Desktop
+  8. Right-click empty space
+  9. Select: "Paste"
+  10. Shortcut is on Desktop!
+
+Method 2: Batch file shortcut
+  1. File already exists: RUN_SCRAPER.bat
+  2. Right-click: RUN_SCRAPER.bat
+  3. Create shortcut
+  4. Move to Desktop
+  5. Rename if desired
+  6. Double-click to run anytime
+
+================================================================================
+WHAT'S INCLUDED
+================================================================================
+
+The .exe file includes:
+  ✓ Python 3.13 runtime (embedded)
+  ✓ All required libraries:
+    - numpy
+    - Pillow
+    - OpenCV
+    - pytesseract
+    - pynput
+    - requests
+  ✓ Your questionnaire scraper code
+  ✓ All features (capture, preview, sync)
+
+External requirement:
+  ✗ Tesseract-OCR (must install separately)
+
+Internet requirement:
+  ✗ Internet connection (needed for SYNC feature)
+
+================================================================================
+FILE INFORMATION
+================================================================================
+
+Filename: Serbian Questionnaire Scraper.exe
+Size: 63 MB
+Type: Windows 64-bit Executable
+Location: d:\Project\question_scraper_newDB\dist\
+Python Version: 3.13 (embedded)
+Build Tool: PyInstaller 6.16.0
+
+Why so large?
+  - Includes complete Python runtime
+  - Includes all dependencies
+  - Fully self-contained
+
+Can I delete source files?
+  - Yes, the .exe is standalone
+  - Keep backup of your code
+  - Won't hurt to have both
+
+Can I share it?
+  - Yes! Works on any Windows 10/11 64-bit
+  - Recipient must have Tesseract-OCR
+  - 63 MB to share/email
+
+================================================================================
+RUNNING WORKFLOW
+================================================================================
+
+STARTUP:
+  Double-click Serbian Questionnaire Scraper.exe
+  Wait for window (5-10 seconds first time)
+  See status: "API Connected ✓"
+
+CAPTURE:
+  Click START button
+  Status: "Listening for SPACEBAR..."
+  Press SPACEBAR when ready
+  Select question area (draw rectangle)
+  Select answer area (draw rectangle)
+  Status: "✓ Captured Q#1 | Ready for next"
+  Repeat for more questions
+
+REVIEW:
+  Click PREVIEW button
+  Review all captured questions
+  Close preview window
+
+UPLOAD:
+  Click SYNC button
+  Confirm: "Upload X questions?"
+  Status: "Syncing..."
+  Wait for completion
+  Status: "✓ All X questions uploaded!"
+
+DONE:
+  Questions are in database
+  Ready to capture more or exit
+
+================================================================================
+IMPORTANT NOTES
+================================================================================
+
+✓ No Python command needed
+✓ No command line needed
+✓ No Terminal/PowerShell needed
+✓ Just double-click the .exe file!
+
+✓ Works on Windows 10, Windows 11
+✓ Works on 64-bit systems (standard today)
+✓ Works offline (except SYNC feature)
+
+✓ First run is slightly slower
+✓ Subsequent runs are fast (2-3 seconds)
+✓ Files in dist\ folder are standalone
+
+✓ You can move dist\ folder to another location
+✓ You can make shortcuts on Desktop
+✓ You can share with others (if they have Tesseract)
+
+================================================================================
+NEXT STEPS
+================================================================================
+
+1. INSTALL Tesseract-OCR
+   - Download: https://github.com/UB-Mannheim/tesseract/wiki
+   - Install to: C:\Program Files\Tesseract-OCR
+   - Restart computer
+
+2. CREATE Desktop Shortcut (optional)
+   - Make launching super easy
+   - See instructions above
+
+3. RUN the Application
+   - Double-click the .exe or shortcut
+   - Click START
+   - Begin capturing questions!
+
+4. START CAPTURING
+   - Press SPACEBAR
+   - Select question area
+   - Select answer area
+   - Repeat for each question
+
+5. SYNC TO DATABASE
+   - Click PREVIEW to review
+   - Click SYNC to upload
+   - Done!
+
+================================================================================
+QUICK REFERENCE
+================================================================================
+
+EXE Location:       d:\Project\question_scraper_newDB\dist\
+Batch File:         d:\Project\question_scraper_newDB\RUN_SCRAPER.bat
+Setup Guide:        d:\Project\question_scraper_newDB\EXE_SETUP_GUIDE.md
+Usage Guide:        d:\Project\question_scraper_newDB\QUICK_START.md
+
+Tesseract Download: https://github.com/UB-Mannheim/tesseract/wiki
+Install Location:   C:\Program Files\Tesseract-OCR
+
+================================================================================
+SUMMARY
+================================================================================
+
+You have: Serbian Questionnaire Scraper.exe (63 MB)
+Just run: Double-click to launch
+Required: Tesseract-OCR (download & install once)
+Result: Full questionnaire capture application
+
+NO PYTHON NEEDED!
+NO COMMAND LINE NEEDED!
+JUST CLICK AND GO!
+
+Ready to use. Enjoy! 🚀
+
+================================================================================

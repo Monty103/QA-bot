@@ -1,0 +1,166 @@
+[
+  {
+    "question": "Neposredno regulisanje saobraćaja па putevima vrše:",
+    "answers": [
+      {
+        "text": "@ uniformisani policijski službenici",
+        "is_correct": true
+      },
+      {
+        "text": "Ф inspektori га drumski saobraćaj",
+        "is_correct": false
+      },
+      {
+        "text": "Ф uniformisani komunalni policajci",
+        "is_correct": false
+      }
+    ],
+    "timestamp": "2026-01-18T14:25:51.297375"
+  },
+  {
+    "question": "Kontrolu пад vozačima i vozilima u saobraćaju па putevima radi primene propisa о bezbednosti saobraćaja vrše:",
+    "answers": [
+      {
+        "text": "B policijski službenici u gradanskom odelu",
+        "is_correct": true
+      },
+      {
+        "text": "@ uniformisani policijski službenici",
+        "is_correct": true
+      },
+      {
+        "text": "Bi službenici nadležnog organa za saobraćaj",
+        "is_correct": false
+      },
+      {
+        "text": "B® uniformisani komunalni policajci",
+        "is_correct": false
+      }
+    ],
+    "timestamp": "2026-01-18T14:25:58.890597"
+  },
+  {
+    "question": "Neposredno regulisanje saobraćaja и zoni škole mogu vršiti:",
+    "answers": [
+      {
+        "text": "@ uniformisani policijski službenici",
+        "is_correct": true
+      },
+      {
+        "text": "@ školske saobraćajne patrole i saobraćajne patrole građana",
+        "is_correct": true
+      },
+      {
+        "text": "Ш učitelji, nastavnici i profesori",
+        "is_correct": false
+      },
+      {
+        "text": "Hf roditelji učenika",
+        "is_correct": false
+      },
+      {
+        "text": "@ ucenici",
+        "is_correct": false
+      }
+    ],
+    "timestamp": "2026-01-18T14:26:08.885756"
+  },
+  {
+    "question": "Ма delu puta па kome se izvode radovi neposredno regulisanje saobraćaja mogu vršiti:",
+    "answers": [
+      {
+        "text": "@ uniformisani policijski službenici",
+        "is_correct": true
+      },
+      {
+        "text": "B radnici izvođača radova, odnosno upravljača puta",
+        "is_correct": true
+      },
+      {
+        "text": "MB uniformisani komunalni policajci",
+        "is_correct": false
+      },
+      {
+        "text": "Bi službenici nadležnog organa za saobraćaj",
+        "is_correct": false
+      }
+    ],
+    "timestamp": "2026-01-18T14:26:16.280485"
+  },
+  {
+    "question": "Svaki učesnik u saobraćaju dužan је da se ponaša:",
+    "answers": [
+      {
+        "text": "MB tako да preduzme sve potrebne mere radi izbegavanja ili otklanjanja opasnih situacija nastalih ponašanjem drugih učesnika u saobraćaju, ako sebe ili drugog time пе dovodi и opasnost",
+        "is_correct": true
+      },
+      {
+        "text": "Ш na način kojim neće ometati, ugroziti ili povrediti druge učesnike",
+        "is_correct": true
+      },
+      {
+        "text": "Ш na način koji će ти omogućiti da što pre bezbedno stigne na odredište",
+        "is_correct": false
+      },
+      {
+        "text": "Ш na način kojim može ometati, ali ne i povrediti ili ugroziti druge učesnike и saobraćaju",
+        "is_correct": false
+      }
+    ],
+    "timestamp": "2026-01-18T14:26:27.420977"
+  },
+  {
+    "question": "Svako fizičko lice vlasnik, odnosno korisnik vozila:",
+    "answers": [
+      {
+        "text": "e dužan је да obezbedi da njegova vozila u saobraćaju па putevima budu tehnički ispravna",
+        "is_correct": true
+      },
+      {
+        "text": "@ dužan je да obezbedi да njegova vozila и saobraćaju na putevima budu tehnički ispravna, samo Када lično upravlja vozilom",
+        "is_correct": false
+      },
+      {
+        "text": "@ nije dužan да obezbedi да njegova vozila и saobraćaju па putevima budu tehnički ispravna",
+        "is_correct": false
+      }
+    ],
+    "timestamp": "2026-01-18T14:26:34.952517"
+  },
+  {
+    "question": "U с ји bezbednog učešća dece и saobraćaju porodica ima odgovornost za:",
+    "answers": [
+      {
+        "text": "Ф sticanje znanja, veština i navika dece, neophodnih га bezbedno učešće и saobraćaju",
+        "is_correct": true
+      },
+      {
+        "text": "Ф formiranje školskih saobraćajnih patrola i saobraćajnih patrola građana",
+        "is_correct": false
+      },
+      {
+        "text": "Ф donošenje programa saobraćajnog vaspitanja i obrazovanja dece и predškolskim i školskim ustanovama",
+        "is_correct": false
+      }
+    ],
+    "timestamp": "2026-01-18T14:26:41.509268"
+  },
+  {
+    "question": "U с ји bezbednog učešća dece и saobraćaju porodica ima odgovornost za:",
+    "answers": [
+      {
+        "text": "e unapređivanje i učvršćivanje pozitivnih stavova i ponašanja dece, značajnih za bezbedno učešće и saobraćaju",
+        "is_correct": true
+      },
+      {
+        "text": "Ф donošenje programa saobraćajnog vaspitanja i obrazovanja dece и predškolskim i školskim ustanovama",
+        "is_correct": false
+      },
+      {
+        "text": "@ formiranje školskih saobraćajnih patrola i saobraćajnih patrola građana",
+        "is_correct": false
+      }
+    ],
+    "timestamp": "2026-01-18T14:26:48.714158"
+  }
+]

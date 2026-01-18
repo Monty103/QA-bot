@@ -1,0 +1,28 @@
+{
+  "tesseract_path": "C:\\dt\\Tesseract-OCR\\tesseract.exe",
+  "database_file": "data/test_questions.db",
+  "api_url": "https://question-database-api.onrender.com",
+  "use_api": true,
+  "ocr_language": "srp+eng",
+  "fuzzy_match_threshold": 85,
+  "monitoring_interval_seconds": 0.5,
+  "click_detection_threshold": 5,
+  "correction_delay_seconds": 0.2,
+  "template_match_threshold": 0.7,
+  "orange_detection_threshold": 0.15,
+  "enable_auto_correction": true,
+  "show_debug_messages": true,
+  "use_dynamic_regions": true,
+  "question_region": {
+    "x": 30,
+    "y": 125,
+    "width": 900,
+    "height": 50
+  },
+  "answer_region": {
+    "x": 25,
+    "y": 160,
+    "width": 900,
+    "height": 200
+  }
+}

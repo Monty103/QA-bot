@@ -1,0 +1,13 @@
+This program is designed to automatically correct answers during a test. When a user selects an incorrect answer, the script automatically switches it to the correct one. The program runs silently in the background.
+
+It uses OCR technology (Tesseract). Whenever a new question appears, the program captures a screenshot of the entire screen and detects the question text, possible answers, and predefined anchor points. These anchor points help the program determine its position on the screen.
+
+Once the question is identified and the text is scanned, the program searches an online database for a matching question. After locating it, the program retrieves both the correct and incorrect answers. It then waits for the answer bubble next to an option to be selected, which indicates that the user has answered the question. The program checks the selected answer and determines whether it is correct. If the answer is incorrect, the program automatically corrects it by clicking on the correct answer bubble.
+
+When the user clicks the “Next Question” button, the program detects this action and restarts the process: locating the new question, identifying the correct answers, and correcting the user if necessary.
+
+The answer bubbles are also used as indicators of the question type. A round bubble represents a single-answer question, while a more square-shaped bubble indicates a multiple-answer question (typically requiring 2–4 answers). These bubble shapes are consistent and predefined. Reference images for each bubble type are stored in the /docs/ folder. The single-answer example is located at /docs/bubble_1_answer.png, and the multiple-answer example is located at /docs/bubble_multy_answer.png. There is also a 'selected bubble' example png. The one for multiple-asnwers questions is located at /docs/bubble_selected_multy_answer.png and the one for 1 answer questions is a /docs/bubble_selected_1_answer.png
+
+The “Next Question” button is also predefined, with a reference image stored in /docs/next_question.png. Additionally, there is a “Previous Question” button used as a reference, located in the same folder as /docs/previouse_question.png.
+
+The question database is hosted online, and the program uses an API to retrieve the relevant questions and their correct answers. There is also a file called 'questions_answers.json', it has all the questions and answers that have been added up to the database. That is used if the database doesent have the questions. It is used as a backup database (a local database). It is stored in  /database/questions_answers.json
